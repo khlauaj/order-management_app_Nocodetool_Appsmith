@@ -1,0 +1,37 @@
+{
+  "unpublishedCollection": {
+    "name": "Utils",
+    "pageId": "OMS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\torderStatusOptions:   [\n\t{\n    \"label\": \"Order Placed\",\n    \"value\": \"ORDER PLACED\"\n  },\n  {\n    \"label\": \"Delayed\",\n    \"value\": \"DELAYED\"\n  },\n  {\n    \"label\": \"Delivered\",\n    \"value\": \"DELIVERED\"\n  },\n  {\n    \"label\": \"Refunded\",\n    \"value\": \"REFUNDED\"\n  }\n],\n\tupdateOrder: async () =>{\n\t\tawait edit_order.run();\n\t\t\tawait fetch_orders.run();\n\t\t\treturn closeModal('edit_order_modal');\t\n\t},\n\trefundOrder: async () => {\n\t\tawait StripeRefund.run();\n\t\tawait update_order_amount.run();\n\t\treturn await fetch_orders.run();\n\t},\n\taddOrder: async () => {\n\t\tconst orderId = this.generateRandomID();\n\t\tawait add_order.run({Id: orderId});\n\t\tawait add_product.run({Id: orderId});\n\t\tawait fetch_orders.run();\n\t\tawait resetWidget('add_modal');\n\t\treturn closeModal('add_modal');\n\t},\n\tgenerateRandomID: () => {\n\t\treturn '_' + Math.random().toString(36).substr(2,9);\n\t\t\n\t}\n}",
+    "variables": [
+      {
+        "name": "orderStatusOptions",
+        "value": [
+          {
+            "label": "Order Placed",
+            "value": "ORDER PLACED"
+          },
+          {
+            "label": "Delayed",
+            "value": "DELAYED"
+          },
+          {
+            "label": "Delivered",
+            "value": "DELIVERED"
+          },
+          {
+            "label": "Refunded",
+            "value": "REFUNDED"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "OMS_Utils",
+  "deleted": false,
+  "gitSyncId": "6289e2937901344ba8d17ca5_628db6a67901344ba8d26c2a"
+}
