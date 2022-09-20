@@ -84,15 +84,96 @@
             }
           ]
         }
-      ]
+      ],
+      "formData": {
+        "command": {
+          "data": "INSERT_MANY",
+          "viewType": "component",
+          "componentData": "INSERT_MANY"
+        },
+        "entityType": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "pagination": {
+          "data": {
+            "offset": "0",
+            "limit": "10"
+          },
+          "viewType": "component",
+          "componentData": {
+            "offset": "0",
+            "limit": "10"
+          }
+        },
+        "queryFormat": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "rowIndex": {
+          "data": "0",
+          "viewType": "component",
+          "componentData": "0"
+        },
+        "rowObjects": {
+          "data": "{{\nselected_product_list.listData.map((product, index) => {\n\treturn{\n\t\t\"Id\": fetch_products.data.length + index,\n\t\t\"Item\": product.Item,\n\t\t\"Item image\": product[\"Item image\"],\n\t\t\"Order ID\": this.params.Id,\n\t\t\"Qty\": selected_product_list.items[index].Qty_input.text\n\t}\n})\n}}",
+          "viewType": "component",
+          "componentData": "{{\nselected_product_list.listData.map((product, index) => {\n\treturn{\n\t\t\"Id\": fetch_products.data.length + index,\n\t\t\"Item\": product.Item,\n\t\t\"Item image\": product[\"Item image\"],\n\t\t\"Order ID\": this.params.Id,\n\t\t\"Qty\": selected_product_list.items[index].Qty_input.text\n\t}\n})\n}}"
+        },
+        "sheetName": {
+          "data": "Products",
+          "viewType": "component",
+          "componentData": "Products"
+        },
+        "sheetUrl": {
+          "data": "https://docs.google.com/spreadsheets/d/14ZBAWUE0fWbGgsL607TCT_glLtyZs4r93sqI6pWrqKE/edit",
+          "viewType": "component",
+          "componentData": "https://docs.google.com/spreadsheets/d/14ZBAWUE0fWbGgsL607TCT_glLtyZs4r93sqI6pWrqKE/edit"
+        },
+        "smartSubstitution": {
+          "data": true,
+          "viewType": "component",
+          "componentData": true
+        },
+        "tableHeaderIndex": {
+          "data": "1",
+          "viewType": "component",
+          "componentData": "1"
+        },
+        "where": {
+          "data": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "LT",
+                "value": "",
+                "key": ""
+              }
+            ]
+          },
+          "viewType": "component",
+          "componentData": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "LT",
+                "value": "",
+                "key": ""
+              }
+            ]
+          }
+        }
+      }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "pluginSpecifiedTemplates[9].value"
+        "key": "formData.rowObjects.data"
       },
       {
-        "key": "pluginSpecifiedTemplates[10].value"
+        "key": "formData.rowObjects.data"
       }
     ],
     "isValid": true,

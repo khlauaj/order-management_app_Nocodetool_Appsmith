@@ -83,14 +83,97 @@
             }
           ]
         }
-      ]
+      ],
+      "formData": {
+        "command": {
+          "data": "UPDATE_ONE",
+          "viewType": "component",
+          "componentData": "UPDATE_ONE"
+        },
+        "entityType": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "pagination": {
+          "data": {
+            "offset": "0",
+            "limit": "10"
+          },
+          "viewType": "component",
+          "componentData": {
+            "offset": "0",
+            "limit": "10"
+          }
+        },
+        "projection": {
+          "data": []
+        },
+        "queryFormat": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "range": {
+          "data": ""
+        },
+        "rowIndex": {
+          "data": "0",
+          "viewType": "component",
+          "componentData": "0"
+        },
+        "rowObjects": {
+          "data": "{\n\t\"rowIndex\": {{orders_table.selectedRowIndex}},\n\t\"Status\": \"REFUNDED\"\n}",
+          "viewType": "component",
+          "componentData": "{\n\t\"rowIndex\": {{orders_table.selectedRowIndex}},\n\t\"Status\": \"REFUNDED\"\n}"
+        },
+        "sheetName": {
+          "data": "Orders",
+          "viewType": "component",
+          "componentData": "Orders"
+        },
+        "sheetUrl": {
+          "data": "https://docs.google.com/spreadsheets/d/14ZBAWUE0fWbGgsL607TCT_glLtyZs4r93sqI6pWrqKE/edit",
+          "viewType": "component",
+          "componentData": "https://docs.google.com/spreadsheets/d/14ZBAWUE0fWbGgsL607TCT_glLtyZs4r93sqI6pWrqKE/edit"
+        },
+        "smartSubstitution": {
+          "data": true,
+          "viewType": "component",
+          "componentData": true
+        },
+        "tableHeaderIndex": {
+          "data": "1",
+          "viewType": "component",
+          "componentData": "1"
+        },
+        "where": {
+          "data": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "LT",
+                "value": "",
+                "key": ""
+              }
+            ]
+          },
+          "viewType": "component",
+          "componentData": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "LT",
+                "value": "",
+                "key": ""
+              }
+            ]
+          }
+        }
+      }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "pluginSpecifiedTemplates[9].value"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],

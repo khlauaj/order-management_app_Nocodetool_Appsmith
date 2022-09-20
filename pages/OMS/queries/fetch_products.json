@@ -83,12 +83,96 @@
             }
           ]
         }
-      ]
+      ],
+      "formData": {
+        "command": {
+          "data": "FETCH_MANY",
+          "viewType": "component",
+          "componentData": "FETCH_MANY"
+        },
+        "entityType": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "pagination": {
+          "data": {
+            "offset": "0",
+            "limit": "100"
+          },
+          "viewType": "component",
+          "componentData": {
+            "offset": "0",
+            "limit": "100"
+          }
+        },
+        "queryFormat": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "rowIndex": {
+          "data": "0",
+          "viewType": "component",
+          "componentData": "0"
+        },
+        "sheetName": {
+          "data": "Products",
+          "viewType": "component",
+          "componentData": "Products"
+        },
+        "sheetUrl": {
+          "data": "https://docs.google.com/spreadsheets/d/14ZBAWUE0fWbGgsL607TCT_glLtyZs4r93sqI6pWrqKE/edit",
+          "viewType": "component",
+          "componentData": "https://docs.google.com/spreadsheets/d/14ZBAWUE0fWbGgsL607TCT_glLtyZs4r93sqI6pWrqKE/edit"
+        },
+        "smartSubstitution": {
+          "data": true,
+          "viewType": "component",
+          "componentData": true
+        },
+        "sortBy": {
+          "data": [
+            {
+              "column": "",
+              "order": "Ascending"
+            }
+          ]
+        },
+        "tableHeaderIndex": {
+          "data": "1",
+          "viewType": "component",
+          "componentData": "1"
+        },
+        "where": {
+          "data": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "EQ",
+                "value": "{{orders_table.selectedRow.Order_ID}}",
+                "key": "Order ID"
+              }
+            ]
+          },
+          "viewType": "component",
+          "componentData": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "EQ",
+                "value": "{{orders_table.selectedRow.Order_ID}}",
+                "key": "Order ID"
+              }
+            ]
+          }
+        }
+      }
     },
     "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
-        "key": "pluginSpecifiedTemplates[14].value[0].value"
+        "key": "formData.where.data"
       }
     ],
     "isValid": true,

@@ -10,24 +10,7 @@
     "variables": [
       {
         "name": "orderStatusOptions",
-        "value": [
-          {
-            "label": "Order Placed",
-            "value": "ORDER PLACED"
-          },
-          {
-            "label": "Delayed",
-            "value": "DELAYED"
-          },
-          {
-            "label": "Delivered",
-            "value": "DELIVERED"
-          },
-          {
-            "label": "Refunded",
-            "value": "REFUNDED"
-          }
-        ]
+        "value": "[{\n  \"label\": \"Order Placed\",\n  \"value\": \"ORDER PLACED\"\n}, {\n  \"label\": \"Delayed\",\n  \"value\": \"DELAYED\"\n}, {\n  \"label\": \"Delivered\",\n  \"value\": \"DELIVERED\"\n}, {\n  \"label\": \"Refunded\",\n  \"value\": \"REFUNDED\"\n}]"
       }
     ]
   },

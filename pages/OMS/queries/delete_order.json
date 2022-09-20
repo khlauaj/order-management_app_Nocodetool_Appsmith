@@ -82,12 +82,88 @@
             }
           ]
         }
-      ]
+      ],
+      "formData": {
+        "command": {
+          "data": "DELETE_ONE",
+          "viewType": "component",
+          "componentData": "DELETE_ONE"
+        },
+        "entityType": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "pagination": {
+          "data": {
+            "offset": "0",
+            "limit": "10"
+          },
+          "viewType": "component",
+          "componentData": {
+            "offset": "0",
+            "limit": "10"
+          }
+        },
+        "queryFormat": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "rowIndex": {
+          "data": "{{orders_table.selectedRowIndex}}",
+          "viewType": "component",
+          "componentData": "{{orders_table.selectedRowIndex}}"
+        },
+        "sheetName": {
+          "data": "Orders",
+          "viewType": "component",
+          "componentData": "Orders"
+        },
+        "sheetUrl": {
+          "data": "https://docs.google.com/spreadsheets/d/14ZBAWUE0fWbGgsL607TCT_glLtyZs4r93sqI6pWrqKE/edit",
+          "viewType": "component",
+          "componentData": "https://docs.google.com/spreadsheets/d/14ZBAWUE0fWbGgsL607TCT_glLtyZs4r93sqI6pWrqKE/edit"
+        },
+        "smartSubstitution": {
+          "data": true,
+          "viewType": "component",
+          "componentData": true
+        },
+        "tableHeaderIndex": {
+          "data": "1",
+          "viewType": "component",
+          "componentData": "1"
+        },
+        "where": {
+          "data": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "LT",
+                "value": "",
+                "key": ""
+              }
+            ]
+          },
+          "viewType": "component",
+          "componentData": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "LT",
+                "value": "",
+                "key": ""
+              }
+            ]
+          }
+        }
+      }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "pluginSpecifiedTemplates[11].value"
+        "key": "formData.rowIndex.data"
       }
     ],
     "isValid": true,
