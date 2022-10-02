@@ -26,7 +26,7 @@
       "queryParameters": [
         {
           "key": "access_token",
-          "value": "EAAvZBMr5by9MBAJwO3p73rZCmqgRt295P1ZBZCDmF2s6DgbxzdY0KPmBRbtEZAOUOBzNjl1Y6xomljIpphMk87q5ZCz2bUkkOvA4q8hureVCZB2pyvVACM9MvzaxB3ABWVbWHy12CRrpaUonHOfB3j9fEDPIfY2ckjJ9ygkJ0wd8cScCdmyAILt44Ir2R7Dl4n18gOkZBNkXmgZDZD"
+          "value": "EAAvZBMr5by9MBAKUoa1pXac3fXdZBGtZAJJa9AWZCeGFS0sVVFJKR4aWnWvY33ZA9ZC9zDTp9lIZAxHTlATDDCGtEiqsV2a24inDrQk4AtuBHuqdiXxRPOue2fPw05CnVWvdKsC2zh3R1S6TvQ9gBX0jpRvlOmw7JZCnQTlNNQ9VCnWvz2kbRk5KZAqSGuQVGjOZCqCrK8I1cSGACGIT9SnInqLd6I0nXWryG16OsiwHeCB9Oan2Dj7Jvk"
         }
       ],
       "bodyFormData": [],
@@ -37,7 +37,7 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       }
     },
     "executeOnLoad": true,
