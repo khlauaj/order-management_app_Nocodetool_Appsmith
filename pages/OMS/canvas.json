@@ -4139,6 +4139,55 @@
                   ],
                   "children": [
                     {
+                      "widgetName": "Facebook_name_meta_dataCopy1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 84,
+                      "bottomRow": 104,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 26.834716796875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Target Comments: {{appsmith.store.targetComments}}",
+                      "key": "ndum31e3v4",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "textAlign": "LEFT",
+                      "widgetId": "ll8gakruox",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "8m78zvifpg",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1rem"
+                    },
+                    {
                       "widgetName": "Facebook_name_meta_dataCopy",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -4171,7 +4220,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "id: {{Facebook_ID_connect.text}}",
+                      "text": "id: {{SubmitApi.comments}}",
                       "key": "ndum31e3v4",
                       "isDeprecated": false,
                       "rightColumn": 48,
@@ -4251,8 +4300,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 100,
-                      "bottomRow": 104,
+                      "topRow": 112,
+                      "bottomRow": 116,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -4348,8 +4397,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 76,
-                      "bottomRow": 89,
+                      "topRow": 71,
+                      "bottomRow": 84,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -4358,7 +4407,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 26.834716796875,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 31,
+                      "leftColumn": 37,
                       "dynamicBindingPathList": [
                         {
                           "key": "fontFamily"
@@ -4375,7 +4424,7 @@
                       "text": "Comments:\n\n{{Facebook_get_comments.data.data}}",
                       "key": "newzv10b26",
                       "isDeprecated": false,
-                      "rightColumn": 58,
+                      "rightColumn": 64,
                       "textAlign": "LEFT",
                       "widgetId": "6wq1ajma8k",
                       "isVisible": true,
@@ -4392,7 +4441,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button8Copy",
-                      "onClick": "{{Facebook_get_comments.run(() => {}, () => {})}}",
+                      "onClick": "{{SubmitApi.searchComments()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -4400,8 +4449,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 82,
-                      "bottomRow": 88,
+                      "topRow": 78,
+                      "bottomRow": 84,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -4441,7 +4490,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1Copy1",
+                      "widgetName": "Search_comment_input",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -4450,10 +4499,10 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 76,
-                      "bottomRow": 80,
+                      "topRow": 74,
+                      "bottomRow": 78,
                       "parentRowSpace": 10,
-                      "labelWidth": 5,
+                      "labelWidth": "13",
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
@@ -4478,11 +4527,11 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 29,
+                      "rightColumn": 37,
                       "widgetId": "oiec5z7a7c",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
-                      "label": "Post ID:",
+                      "label": "Search the comments:",
                       "version": 2,
                       "parentId": "8m78zvifpg",
                       "labelAlignment": "left",
@@ -4753,8 +4802,9 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button8",
-                      "onClick": "{{SubmitApi.myFun1()}}",
+                      "onClick": "{{SubmitApi.fetchComments()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -5035,8 +5085,8 @@
                       "searchTags": [
                         "line"
                       ],
-                      "topRow": 91,
-                      "bottomRow": 95,
+                      "topRow": 104,
+                      "bottomRow": 108,
                       "parentRowSpace": 10,
                       "type": "DIVIDER_WIDGET",
                       "capType": "nc",
@@ -5077,8 +5127,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 95,
-                      "bottomRow": 99,
+                      "topRow": 108,
+                      "bottomRow": 112,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -5123,8 +5173,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 105,
-                      "bottomRow": 109,
+                      "topRow": 116,
+                      "bottomRow": 120,
                       "parentRowSpace": 10,
                       "labelWidth": "10",
                       "type": "SINGLE_SELECT_TREE_WIDGET",
@@ -5174,8 +5224,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 110,
-                      "bottomRow": 114,
+                      "topRow": 120,
+                      "bottomRow": 124,
                       "tooltip": "To definec which keywords do you want to capture from the comments. For example, \"Buy 1\"",
                       "parentRowSpace": 10,
                       "labelWidth": "7",
