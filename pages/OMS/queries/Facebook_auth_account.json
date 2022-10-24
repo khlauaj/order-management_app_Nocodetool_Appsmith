@@ -26,11 +26,12 @@
       "queryParameters": [
         {
           "key": "access_token",
-          "value": "EAAvZBMr5by9MBAKUoa1pXac3fXdZBGtZAJJa9AWZCeGFS0sVVFJKR4aWnWvY33ZA9ZC9zDTp9lIZAxHTlATDDCGtEiqsV2a24inDrQk4AtuBHuqdiXxRPOue2fPw05CnVWvdKsC2zh3R1S6TvQ9gBX0jpRvlOmw7JZCnQTlNNQ9VCnWvz2kbRk5KZAqSGuQVGjOZCqCrK8I1cSGACGIT9SnInqLd6I0nXWryG16OsiwHeCB9Oan2Dj7Jvk"
+          "value": "EAAvZBMr5by9MBAGGcMeTXtvOGkrT9X149It08R9AH0MY1vDktUZAFEKPPE1r4LPigkLihaQ4xfXTCp9kB4FI1zcSi4Bses1ePxjEEdVOtPvy9mZAWintFB5ss89lns0OM7uXeZCTXaNkfGD9tczbmYGl5Ulw7CERfVdZCHZCeA45bYrtyJFQ4uNXGMMHvor278htRkmTRchtKF1hYMbHNn4vRQwgVY4mWaleWY3xxeQX8unP02o9B5"
         }
       ],
       "bodyFormData": [],
       "httpMethod": "GET",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

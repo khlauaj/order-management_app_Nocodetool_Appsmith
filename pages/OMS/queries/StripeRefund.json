@@ -33,6 +33,7 @@
       "body": "{{\n\t{}\n}}",
       "bodyFormData": [],
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

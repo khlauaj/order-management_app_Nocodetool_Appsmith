@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "myFun2",
-    "fullyQualifiedName": "JSObject1.myFun2",
+    "fullyQualifiedName": "SubmitApi.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "OMS",
-    "collectionId": "OMS_JSObject1",
+    "collectionId": "OMS_SubmitApi",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "OMS_JSObject1.myFun2",
+  "id": "OMS_SubmitApi.myFun2",
   "deleted": false,
-  "gitSyncId": "6289e2937901344ba8d17ca5_631c5bfe238888080c59761f"
+  "gitSyncId": "6289e2937901344ba8d17ca5_63566dac4b1a8d42912388d1"
 }

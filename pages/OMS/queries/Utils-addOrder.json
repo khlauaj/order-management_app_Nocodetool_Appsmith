@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  const orderId = Utils.generateRandomID();\n  await add_order.run({\n    Id: orderId\n  });\n  await add_product.run({\n    Id: orderId\n  });\n  await fetch_orders.run();\n  await resetWidget('add_modal');\n  return closeModal('add_modal');\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

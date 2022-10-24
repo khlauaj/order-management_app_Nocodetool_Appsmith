@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "SubmitApi",
+    "pageId": "OMS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: async () => {\n\t\tlet facebookPostData;\n\t\t\n\t\tconst payload = {\n\t\t\tid: Facebook_ID_connect.text,\n\t\t\tpostId: Facebook_Post_Id.text,\n\t\t\ttoken: Access_token_input.text\n\t\t}\n\t\tawait fetch(`https://graph.facebook.com/${payload.id}_${payload.postId}?fields=comments{message,id,created_time,from}`, {\n\t\t\theaders: { Authorization: `Bearer ${payload.token}`, 'Content-Type':'application/json' }\n\t\t})\n\t\t\t.then((response) => response.json())\n\t\t\t.then((data) => {\n\t\t\tfacebookPostData = data;\n\t\t\tconsole.log(facebookPostData)\n\t\t})\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "OMS_SubmitApi",
+  "deleted": false,
+  "gitSyncId": "6289e2937901344ba8d17ca5_63566dac4b1a8d42912388d4"
+}
