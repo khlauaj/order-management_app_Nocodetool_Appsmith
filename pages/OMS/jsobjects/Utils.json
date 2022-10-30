@@ -12,7 +12,8 @@
         "name": "orderStatusOptions",
         "value": "[{\n  \"label\": \"Order Placed\",\n  \"value\": \"ORDER PLACED\"\n}, {\n  \"label\": \"Delayed\",\n  \"value\": \"DELAYED\"\n}, {\n  \"label\": \"Delivered\",\n  \"value\": \"DELIVERED\"\n}, {\n  \"label\": \"Refunded\",\n  \"value\": \"REFUNDED\"\n}]"
       }
-    ]
+    ],
+    "userPermissions": []
   },
   "id": "OMS_Utils",
   "deleted": false,

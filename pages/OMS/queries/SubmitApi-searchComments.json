@@ -22,7 +22,7 @@
       "body": "() => {\n  if (appsmith.store.targetComments.length > 0) {\n    storeValue('targetComments', undefined);\n  }\n  const targetComments = appsmith.store.comments.data.filter(item => item.message === Search_comment_input.text);\n  storeValue('targetComments', targetComments, false);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "clientSideExecution": true,
