@@ -107,6 +107,9 @@
             "limit": "100"
           }
         },
+        "projection": {
+          "data": []
+        },
         "queryFormat": {
           "data": "ROWS",
           "viewType": "component",
@@ -171,11 +174,7 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.where.data"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
