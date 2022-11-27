@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (appsmith.store.targetComments) {\n    if (appsmith.store.targetComments.length > 0) {\n      storeValue('targetComments', undefined);\n    }\n  }\n  const targetComments = appsmith.store.comments.data.filter(item => item.message === search_comment_input.text);\n  console.log(targetComments);\n  storeValue('targetComments', targetComments, false);\n}",
+      "body": "() => {\n  if (FetchComments.data.comments.data) {\n    if (FetchComments.data.comments.data.length > 0) {\n      storeValue('targetComments', undefined);\n    }\n  }\n  const targetComments = FetchComments.data.comments.data.filter(item => item.message === search_comment_input.text);\n  console.log(targetComments);\n  storeValue('targetComments', targetComments, false);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (appsmith.store.targetComments) {\n    if (appsmith.store.targetComments.length > 0) {\n      storeValue('targetComments', undefined);\n    }\n  }\n  const targetComments = appsmith.store.comments.data.filter(item => item.message === search_comment_input.text);\n  console.log(targetComments);\n  storeValue('targetComments', targetComments, false);\n}"
+      "() => {\n  if (FetchComments.data.comments.data) {\n    if (FetchComments.data.comments.data.length > 0) {\n      storeValue('targetComments', undefined);\n    }\n  }\n  const targetComments = FetchComments.data.comments.data.filter(item => item.message === search_comment_input.text);\n  console.log(targetComments);\n  storeValue('targetComments', targetComments, false);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

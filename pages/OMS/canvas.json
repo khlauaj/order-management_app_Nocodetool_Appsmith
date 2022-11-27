@@ -4119,7 +4119,7 @@
                   "widgetName": "Canvas13",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1820,
+                  "bottomRow": 1770,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -4139,10 +4139,58 @@
                   ],
                   "children": [
                     {
+                      "widgetName": "Text18CopyCopyCopy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 56,
+                      "bottomRow": 60,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 29.295654296875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "text": "Created Time: {{ SubmitApi.myVar2 }}",
+                      "key": "mhhuak40ie",
+                      "isDeprecated": false,
+                      "rightColumn": 18,
+                      "textAlign": "LEFT",
+                      "widgetId": "6jxztc6dog",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "8m78zvifpg",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1rem"
+                    },
+                    {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button8CopyCopyCopy",
-                      "onClick": "{{SubmitApi.fetchComments()}}",
+                      "onClick": "{{clearInterval('commentTimer')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -4178,161 +4226,6 @@
                       "rightColumn": 60,
                       "isDefaultClickDisabled": true,
                       "widgetId": "slbjzpmvge",
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "8m78zvifpg",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "disabledWhenInvalid": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "PRIMARY",
-                      "placement": "CENTER"
-                    },
-                    {
-                      "resetFormOnClick": false,
-                      "boxShadow": "none",
-                      "widgetName": "AutoCapture_comment_buttonCopy",
-                      "onClick": "{{SubmitApi.fetchComments()}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 145,
-                      "bottomRow": 151,
-                      "parentRowSpace": 10,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 26.834716796875,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
-                      "leftColumn": 42,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "text": "Stop Auto Capture",
-                      "isDisabled": false,
-                      "key": "0j5nu2eicb",
-                      "isDeprecated": false,
-                      "rightColumn": 59,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "visgq9zv0g",
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "8m78zvifpg",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "disabledWhenInvalid": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "PRIMARY",
-                      "placement": "CENTER"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Autosearch_comment_timer_inputCopy",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 144,
-                      "bottomRow": 148,
-                      "parentRowSpace": 10,
-                      "labelWidth": "11",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 26.834716796875,
-                      "dynamicTriggerPathList": [],
-                      "resetOnSubmit": true,
-                      "leftColumn": 1,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "8ke5ldu1al",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 34,
-                      "widgetId": "r7iiyhxy0k",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Timer (seconds):",
-                      "version": 2,
-                      "parentId": "8m78zvifpg",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "iconAlign": "left",
-                      "defaultText": ""
-                    },
-                    {
-                      "resetFormOnClick": false,
-                      "boxShadow": "none",
-                      "widgetName": "AutoCapture_comment_button",
-                      "onClick": "{{SubmitApi.fetchComments()}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 138,
-                      "bottomRow": 144,
-                      "parentRowSpace": 10,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 26.834716796875,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
-                      "leftColumn": 42,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "text": "Automatically Capture",
-                      "isDisabled": false,
-                      "key": "0j5nu2eicb",
-                      "isDeprecated": false,
-                      "rightColumn": 59,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "20a1b6xn4c",
                       "isVisible": true,
                       "recaptchaType": "V3",
                       "version": 1,
@@ -4401,7 +4294,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button8CopyCopy",
-                      "onClick": "{{SubmitApi.fetchComments()}}",
+                      "onClick": "{{setInterval(() => { \n\t FetchComments.run() \n},Autosearch_comment_timer_input.text * 1000,'commentTimer')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -4707,7 +4600,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button8Copy",
-                      "onClick": "{{SubmitApi.fetchComments()}}",
+                      "onClick": "{{FetchComments.run()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -4715,8 +4608,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 63,
-                      "bottomRow": 69,
+                      "topRow": 64,
+                      "bottomRow": 70,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -4765,8 +4658,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 67,
-                      "bottomRow": 71,
+                      "topRow": 68,
+                      "bottomRow": 72,
                       "parentRowSpace": 10,
                       "labelWidth": "13",
                       "autoFocus": false,
@@ -4968,8 +4861,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 63,
-                      "bottomRow": 67,
+                      "topRow": 64,
+                      "bottomRow": 68,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -5014,8 +4907,8 @@
                       "searchTags": [
                         "line"
                       ],
-                      "topRow": 59,
-                      "bottomRow": 63,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "type": "DIVIDER_WIDGET",
                       "capType": "nc",
@@ -5138,57 +5031,6 @@
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
-                      "widgetName": "Button10",
-                      "onClick": "{{SubmitApi.searchComments()}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 132,
-                      "bottomRow": 137,
-                      "parentRowSpace": 10,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 12.0537109375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
-                      "leftColumn": 42,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "text": "Manually Capture",
-                      "isDisabled": false,
-                      "key": "k7qtv0ehbn",
-                      "isDeprecated": false,
-                      "rightColumn": 59,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "1sgxdwou90",
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "8m78zvifpg",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "disabledWhenInvalid": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "PRIMARY",
-                      "placement": "CENTER"
-                    },
-                    {
-                      "resetFormOnClick": false,
-                      "boxShadow": "none",
                       "widgetName": "Button11",
                       "onClick": "{{SubmitApi.connectFb()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -5242,7 +5084,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 152,
+                      "topRow": 147,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -5307,7 +5149,7 @@
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisibleFilters": true,
+                      "isVisibleFilters": false,
                       "isVisible": true,
                       "enableClientSideSearch": true,
                       "version": 1,
@@ -5350,7 +5192,7 @@
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 180,
+                      "bottomRow": 175,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
@@ -5468,13 +5310,13 @@
                       "rightColumn": 61,
                       "textSize": "0.875rem",
                       "widgetId": "0sx44wfnth",
-                      "tableData": "{{appsmith.store.targetComments}}",
+                      "tableData": "{{FetchComments.data.comments.data.filter(item => item.message === search_comment_input.text)}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "8m78zvifpg",
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
-                      "isVisibleSearch": true,
+                      "isVisibleSearch": false,
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
                     },
@@ -5531,7 +5373,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 83,
+                      "topRow": 84,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -5639,7 +5481,7 @@
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 126,
+                      "bottomRow": 127,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
@@ -5757,7 +5599,7 @@
                       "rightColumn": 60,
                       "textSize": "0.875rem",
                       "widgetId": "b8bcx8u1pb",
-                      "tableData": "{{ appsmith.store.comments.data }}",
+                      "tableData": "{{\nFetchComments.data.comments.data\n}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "8m78zvifpg",
@@ -8330,6 +8172,20 @@
               "pluginType": "SAAS",
               "jsonPathKeys": [
                 "orders_table.selectedRow.Customer_Id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "OMS_FetchComments",
+              "name": "FetchComments",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "Facebook_ID_connect.text",
+                "Facebook_Post_Id.text",
+                "Access_token_input.text"
               ],
               "timeoutInMillisecond": 10000
             }
