@@ -39,4 +39,62 @@ Use Case:
             
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Connect to the Facebook Post:
+
+![image](https://user-images.githubusercontent.com/39978937/204191813-e19fd828-80d3-46a1-9b50-98eea15d30f5.png)
+
+![image](https://user-images.githubusercontent.com/39978937/204191873-15346512-c35f-46d6-a537-0cadeb64fff7.png)
+
+            export default {
+	myVar1: [],
+	myVar2: {},
+	connectFb: async () => {
+		const payload = {
+			id: Facebook_ID_connect.text,
+			postId: Facebook_Post_Id.text,
+			token: Access_token_input.text
+		}
+		await fetch(`https://graph.facebook.com/${payload.id}_${payload.postId}`, {
+			headers: { Authorization: `Bearer ${payload.token}`, 'Content-Type':'application/json' }
+		})
+			.then((response) => response.json())
+			.then((data) => {
+				console.log(data)
+				storeValue('postData', data, false)
+		})
+	},
+	fetchComments: async () => {
+		let facebookPostData;
+		
+		const payload = {
+			id: Facebook_ID_connect.text,
+			postId: Facebook_Post_Id.text,
+			token: Access_token_input.text
+		}
+		await fetch(`https://graph.facebook.com/${payload.id}_${payload.postId}?fields=comments{message,id,created_time,from}`, {
+			headers: { Authorization: `Bearer ${payload.token}`, 'Content-Type':'application/json' }
+		})
+			.then((response) => response.json())
+			.then((data) => {
+			facebookPostData = data.comments;
+				storeValue('comments', data.comments, false)
+			})
+		console.log(facebookPostData);
+		return facebookPostData;
+	},
+	searchComments: () => {
+		if (FetchComments.data.comments.data) {
+			if (FetchComments.data.comments.data.length > 0) {
+				storeValue('targetComments', undefined)
+			}
+		}
+
+		const targetComments = FetchComments.data.comments.data.filter(item => item.message === search_comment_input.text)
+		console.log(targetComments);
+		storeValue('targetComments', targetComments, false)
+	}
+      }
+      
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
