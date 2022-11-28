@@ -97,4 +97,55 @@ Connect to the Facebook Post:
       
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Search Comment automatically:
+
+	def FB_post_connect_input():
+    		print ("To connect your Facebook Page and target post, we need the information")
+    
+    	#Enter Facebook page id & post id
+    		FB_page_id = input("Enter your Facebook Page ID: ")
+    		FB_post_id = input("Enter your Facebook Post ID: ")
+    
+    	#Enter Access Token
+    		FB_page_access_token = input("Enter your Facebook Page Access Token: ")
+    
+    	#Create Get Facebook Post url
+    		FB_connect_post_url = "https://graph.facebook.com/"+FB_page_id+"_"+FB_post_id+"?fields=comments{message,id,created_time,from}"
+   	 	return FB_page_id,FB_post_id,FB_page_access_token,FB_connect_post_url
+		
+	FB_page_id, FB_post_id, FB_page_access_token, FB_connect_post_url = FB_post_connect_input()
+	
+	#Parse the connect input
+	def FB_post_connect(FB_connect_post_url,FB_page_access_token):
+    	r = requests.get(FB_connect_post_url,
+                headers={'Authorization':'Bearer '+ FB_page_access_token,
+                         'Content-Type':'application/json'
+                        }
+                )
+    
+    	#Check request status
+    	print (r)
+   	print(r.status_code)
+    	if r.status_code == requests.codes.ok:
+      	print("OK")
+    	
+    	return r
+	
+	#Connect Facebook Post API
+
+	r = FB_post_connect(FB_connect_post_url,FB_page_access_token)
+	
+	#Configure the message to dataframe
+	#Convert into JSON format
+	r_json=r.json()
+	r_json
+
+	message_data = r_json['comments']['data']
+	message_data
+
+
+![image](https://user-images.githubusercontent.com/39978937/204192093-3c7b5189-88ba-4f0c-91f1-c57b77bf27ea.png)
+
+![image](https://user-images.githubusercontent.com/39978937/204192125-4c038ef4-7635-4de4-9a60-1b69d0e97145.png)
+
 
