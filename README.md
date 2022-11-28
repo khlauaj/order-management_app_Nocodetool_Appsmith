@@ -9,3 +9,34 @@ This app is built using Appsmith. Turn any datasource into an internal app in mi
 ##### You can visit the application using the below link
 
 ###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](https://app.appsmith.com/applications/6289e2937901344ba8d17ca5/pages/6289e2937901344ba8d17ca8) [![](https://assets.appsmith.com/git-sync/Buttons2.svg)](https://app.appsmith.com/applications/6289e2937901344ba8d17ca5/pages/6289e2937901344ba8d17ca8/edit)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Why:
+
+- Facebook seller may not have business license/domain to apply the business account
+- Difficult to setup the Facebook store
+- Rely on opening a Facebook page and upload the photo as well as its captions to sell their product (such as, #1001, White Tshirt, $50)
+- Received 200-500 comments per post (#1001 x1, which means buying 1 White Tshirt) and have to contact the buyers one by one to capture the order
+- Lost clients and lower the conversion rate
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/39978937/204190945-23202d28-6eb9-4b0e-886c-4b7d2121aef5.png">
+
+
+Use Case:
+- Facebook post or live selling
+- Use the application to access Facebook API (Graph API)
+- Connect the post ID and search the comments automatically
+- Setup the target keyword for the search (for example: #1001 x1)
+- If any comment matches with the target keyword, send out a checkout message to the commentors via Messenger API
+- The checkout message contains (Product name, product price, quantity, comment, and checkout link), shown as below
+
+      Product name: White Tshirt
+      Product price: $50
+      Quantity: 1
+      Comment: #1001x1
+      Checkout link: www.checkoutlink-example12345678.com
+            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
