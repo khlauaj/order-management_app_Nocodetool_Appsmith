@@ -8721,9 +8721,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
+                "Access_token_input.text",
                 "Facebook_ID_connect.text",
-                "Facebook_Post_Id.text",
-                "Access_token_input.text"
+                "Facebook_Post_Id.text"
               ],
               "timeoutInMillisecond": 10000
             }
