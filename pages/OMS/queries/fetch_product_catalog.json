@@ -106,6 +106,9 @@
             "limit": "100"
           }
         },
+        "projection": {
+          "data": []
+        },
         "queryFormat": {
           "data": "ROWS",
           "viewType": "component",
