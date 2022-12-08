@@ -2,12 +2,11 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "FetchComments",
+    "name": "Api3",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
         "url": "https://graph.facebook.com"
       },
       "invalids": [],
@@ -21,26 +20,22 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/{{Facebook_ID_connect.text}}_{{Facebook_Post_Id.text}}",
+      "path": "/v15.0/{{Facebook_PageId_Message.text}}/messages",
       "headers": [
-        {
-          "key": "Authorization",
-          "value": "Bearer {{Access_token_input.text}}"
-        },
         {
           "key": "content-type",
           "value": "application/json"
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer {{Access_Token_Message.text}}"
         }
       ],
       "encodeParamsToggle": true,
-      "queryParameters": [
-        {
-          "key": "fields",
-          "value": "comments{message,id,created_time,from}"
-        }
-      ],
+      "queryParameters": [],
+      "body": "{{\n\t{\n\t\t\"recipient\": {\"id\": this.params.userId },\n\t\t\"message\": {\"text\": Text_Message.text},\n\t}\n}}",
       "bodyFormData": [],
-      "httpMethod": "GET",
+      "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -51,29 +46,29 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "path"
+        "key": "body"
       },
       {
-        "key": "headers[0].value"
+        "key": "headers[1].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Access_token_input.text",
-      "Facebook_ID_connect.text",
-      "Facebook_Post_Id.text"
+      "Access_Token_Message.text",
+      "Facebook_PageId_Message.text",
+      "{\n\t\t\"recipient\": {\"id\": this.params.userId },\n\t\t\"message\": {\"text\": Text_Message.text},\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "OMS_FetchComments",
+  "id": "OMS_Api3",
   "deleted": false,
-  "gitSyncId": "6289e2937901344ba8d17ca5_63808993dbc6e8336d9609da"
+  "gitSyncId": "6289e2937901344ba8d17ca5_639035ac44c9e7128d9fa54a"
 }

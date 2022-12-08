@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2010,
+          "bottomRow": 1870,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -2120,8 +2120,8 @@
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 0,
-              "bottomRow": 192,
+              "topRow": 2,
+              "bottomRow": 179,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -2148,13 +2148,13 @@
                   "widgetName": "Canvas12",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1060,
+                  "bottomRow": 1720,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 400,
+                  "minHeight": 1720,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -4260,13 +4260,13 @@
                   "widgetName": "Canvas13",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1770,
+                  "bottomRow": 1780,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 400,
+                  "minHeight": 1780,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -5372,7 +5372,7 @@
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 175,
+                      "bottomRow": 178,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
@@ -5814,12 +5814,12 @@
                   "widgetName": "Canvas14",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 1200,
+                  "bottomRow": 1720,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
                   "hideCard": true,
-                  "minHeight": 1210,
+                  "minHeight": 1720,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -7370,12 +7370,12 @@
                   "widgetName": "Canvas15",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 1910,
+                  "bottomRow": 1760,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
                   "hideCard": true,
-                  "minHeight": 1920,
+                  "minHeight": 1720,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -7389,6 +7389,247 @@
                   ],
                   "children": [
                     {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "borderColor": "#E0DEDE",
+                      "isVisibleDownload": true,
+                      "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+                      "topRow": 128,
+                      "isSortable": true,
+                      "type": "TABLE_WIDGET_V2",
+                      "inlineEditingSaveOption": "ROW_LEVEL",
+                      "animateLoading": true,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "childStylesheet.button.buttonColor"
+                        },
+                        {
+                          "key": "childStylesheet.button.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.menuButton.menuColor"
+                        },
+                        {
+                          "key": "childStylesheet.menuButton.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.iconButton.menuColor"
+                        },
+                        {
+                          "key": "childStylesheet.iconButton.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.editActions.saveButtonColor"
+                        },
+                        {
+                          "key": "childStylesheet.editActions.saveBorderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.editActions.discardButtonColor"
+                        },
+                        {
+                          "key": "childStylesheet.editActions.discardBorderRadius"
+                        },
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.message.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.created_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.from.computedValue"
+                        }
+                      ],
+                      "leftColumn": 3,
+                      "delimiter": ",",
+                      "defaultSelectedRowIndex": 0,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": false,
+                      "isVisible": true,
+                      "enableClientSideSearch": true,
+                      "version": 1,
+                      "totalRecordsCount": 0,
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "editActions": {
+                          "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "defaultSelectedRowIndices": [
+                        0
+                      ],
+                      "widgetName": "Table2Copy",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "message",
+                        "id",
+                        "created_time",
+                        "from"
+                      ],
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Table",
+                      "bottomRow": 161,
+                      "columnWidthMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 75
+                      },
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "parentColumnSpace": 12.407470703125,
+                      "dynamicTriggerPathList": [],
+                      "borderWidth": "1",
+                      "primaryColumns": {
+                        "message": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "message",
+                          "id": "message",
+                          "alias": "message",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "message",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"message\"]))}}",
+                          "validation": {}
+                        },
+                        "id": {
+                          "allowCellWrapping": false,
+                          "index": 1,
+                          "width": 150,
+                          "originalId": "id",
+                          "id": "id",
+                          "alias": "id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                          "validation": {}
+                        },
+                        "created_time": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "created_time",
+                          "id": "created_time",
+                          "alias": "created_time",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "created_time",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_time\"]))}}",
+                          "validation": {}
+                        },
+                        "from": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "from",
+                          "id": "from",
+                          "alias": "from",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "from",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table2Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"from\"]))}}",
+                          "validation": {}
+                        }
+                      },
+                      "key": "fht870yk1c",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "textSize": "0.875rem",
+                      "widgetId": "2r10z489s3",
+                      "tableData": "{{FetchComments.data.comments.data.filter(item => item.message === Mesasge_Target_Keyword_Input.text)}}",
+                      "label": "Data",
+                      "searchKey": "",
+                      "parentId": "ekoiedvmdp",
+                      "renderMode": "CANVAS",
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": false,
+                      "isVisiblePagination": true,
+                      "verticalAlignment": "CENTER"
+                    },
+                    {
                       "boxShadow": "none",
                       "widgetName": "Facebook_ID_connectCopyCopy1Copy",
                       "displayName": "Input",
@@ -7399,8 +7640,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 146,
-                      "bottomRow": 150,
+                      "topRow": 119,
+                      "bottomRow": 123,
                       "parentRowSpace": 10,
                       "labelWidth": "12",
                       "autoFocus": false,
@@ -7560,6 +7801,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button12Copy",
+                      "onClick": "{{setInterval(() => { \n\t FetchComments.run()\n\t\tSubmitApi.runAutoMessage()\n},20000,'listenComments')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -7567,14 +7809,18 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 138,
-                      "bottomRow": 144,
+                      "topRow": 111,
+                      "bottomRow": 117,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 12.0537109375,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 48,
                       "dynamicBindingPathList": [
                         {
@@ -7604,7 +7850,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Facebook_ID_connectCopyCopy1",
+                      "widgetName": "Mesasge_Target_Keyword_Input",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -7613,8 +7859,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 141,
-                      "bottomRow": 145,
+                      "topRow": 114,
+                      "bottomRow": 118,
                       "parentRowSpace": 10,
                       "labelWidth": "12",
                       "autoFocus": false,
@@ -7667,8 +7913,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 136,
-                      "bottomRow": 140,
+                      "topRow": 109,
+                      "bottomRow": 113,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -8121,6 +8367,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button12CopyCopy",
+                      "onClick": "{{clearInterval('listenComments')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -8128,14 +8375,18 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 146,
-                      "bottomRow": 152,
+                      "topRow": 119,
+                      "bottomRow": 125,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 12.0537109375,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 48,
                       "dynamicBindingPathList": [
                         {
@@ -8314,7 +8565,7 @@
                         "step": 62,
                         "status": 75,
                         "Item_image": 395,
-                        "EditActions1": 124
+                        "EditActions1": 153
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -8721,9 +8972,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "Access_token_input.text",
                 "Facebook_ID_connect.text",
-                "Facebook_Post_Id.text"
+                "Facebook_Post_Id.text",
+                "Access_token_input.text"
               ],
               "timeoutInMillisecond": 10000
             }
