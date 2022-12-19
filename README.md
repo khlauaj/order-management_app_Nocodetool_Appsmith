@@ -36,6 +36,24 @@ Use Case:
       Quantity: 1
       Comment: #1001x1
       Checkout link: www.checkoutlink-example12345678.com
+      
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+All the access:
+
+- #Default page ID: 100066535242041
+- #Default post ID: 117240846560191
+- #Default Page Access Token: EAAGQa0V58p4BAPDDYsRQcXt90PNqpfQhpZCj4cvBgvJyq99vZBrHktlTWEsZAxhEHMeZAJzVNTDfJuOS21HuCipnRgd21FHs5VR3kx92oZCwC7XnoB0t53QKZA2kTapYLWBaOonqqAE8iExQutXMMdm2Wca3v9KG1ObZBHcYPOHcATv26SFQE5U
+- #Demo messenger page id = 105667904384152
+- #Demo recipient id = 6284271038268550
+- #Facebook account Jason Lau Kai Hoo
+
+
+Limitation:
+#https://developers.facebook.com/docs/messenger-platform/policy/policy-overview#standard_messaging
+#Standard message
+#Limitation: reply the message within 24 hours - You can send message to any Facebook user if you pass the 24 hours windows
+
             
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
