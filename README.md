@@ -41,12 +41,17 @@ Use Case:
 
 All the access:
 
+**Access to the Demo Facebook page, post & comment**
 - #Default page ID: 100066535242041
 - #Default post ID: 117240846560191
-- #Default Page Access Token: EAAGQa0V58p4BAPDDYsRQcXt90PNqpfQhpZCj4cvBgvJyq99vZBrHktlTWEsZAxhEHMeZAJzVNTDfJuOS21HuCipnRgd21FHs5VR3kx92oZCwC7XnoB0t53QKZA2kTapYLWBaOonqqAE8iExQutXMMdm2Wca3v9KG1ObZBHcYPOHcATv26SFQE5U 
-- #latest Access Token: EAAGQa0V58p4BAK72bYyEBTYWSZAYqbPHShx91FqicJJKZAixJmhAKRFjHFmj86XcgK61ZCM3rdRHeAS2k23EKtDL2Ghrb9bAVyzMa7p9iMHNGeWhyiRgVzo5yGS3wdfc5NeOle7DYCHoPUzWkQZBJN6QkmqYd2XZCuiyZCMZBXZCQsZBBypmuhIqY
+- #Default Page Access Token (probably expired): EAAGQa0V58p4BAPDDYsRQcXt90PNqpfQhpZCj4cvBgvJyq99vZBrHktlTWEsZAxhEHMeZAJzVNTDfJuOS21HuCipnRgd21FHs5VR3kx92oZCwC7XnoB0t53QKZA2kTapYLWBaOonqqAE8iExQutXMMdm2Wca3v9KG1ObZBHcYPOHcATv26SFQE5U 
+- #Latest Access Token: EAAGQa0V58p4BAK72bYyEBTYWSZAYqbPHShx91FqicJJKZAixJmhAKRFjHFmj86XcgK61ZCM3rdRHeAS2k23EKtDL2Ghrb9bAVyzMa7p9iMHNGeWhyiRgVzo5yGS3wdfc5NeOle7DYCHoPUzWkQZBJN6QkmqYd2XZCuiyZCMZBXZCQsZBBypmuhIqY
+
+
+**Send the message to the Demo account**
 - #Demo messenger page id = 105667904384152
 - #Demo recipient id = 6284271038268550
+- Access Token: EAAGQa0V58p4BAK72bYyEBTYWSZAYqbPHShx91FqicJJKZAixJmhAKRFjHFmj86XcgK61ZCM3rdRHeAS2k23EKtDL2Ghrb9bAVyzMa7p9iMHNGeWhyiRgVzo5yGS3wdfc5NeOle7DYCHoPUzWkQZBJN6QkmqYd2XZCuiyZCMZBXZCQsZBBypmuhIqY
 - #Facebook account Jason Lau Kai Hoo
 
 
